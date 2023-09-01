@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav BAR</title>
+    <style>
+        *{ margin:0;padding:0; box-sizing: border-box;}
+        body{
+            /* position: relative; */
+            height:700px;
+        }
+
+        section{
+            background-color:yellowgreen;
+            display: flex;
+            justify-content:space-between;
+            height: 100px;
+            position:sticky;
+            top:0;
+        }
+        section  ul li {
+            float:right; 
+            padding:20px 20px;
+            list-style: none;
+        }
+        section ul li a{
+            text-decoration: none;
+            font-size:40px;
+
+        }
+        section ul li a:hover{
+           color:green;
+
+        }
+        section a h1{
+            padding:20px;
+            font-size:40px;
+        }
+        section a{
+            text-decoration: none;
+        }
+        section a h1:hover{
+            color:green;
+        }
+        .menu .dropdown .dropdown-menu a{
+            display:block;
+            background-color: white;
+            padding:10px 0px;
+        }
+        .menu .dropdown .dropdown-menu{
+            display:none;
+            position: absolute;
+            padding: 10px 5px;
+            top: 90px;
+        }
+         .dropdown:hover .dropdown-menu {
+            display:block;
+
+
+        }
+        .menu .dropdown .dropdown-menu>a{
+            font-size: 22px;
+            padding: 7px 20px;
+
+        }
+        .dropdown{
+            position: relative;
+        } 
+       
+    </style>
+</head>
+<body>
+    <section>
+        <a href="#"><h1>Hello</h1></a>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li class="dropdown">
+                <a href="#">Service</a>
+                <div class="dropdown-menu">
+                    <a href="#">Service A</a>
+                    <a href="#">Service B</a>
+                    <a href="#">Service C</a>
+                    <a href="#">Service D</a>
+                </div>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Dashboard</a></li>
+        </ul>
+    </section>
+</body>
+</html>

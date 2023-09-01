@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       form input:focus{
+            background-color: rgb(135, 117, 151);
+            color:black;
+            padding:10px 20px;
+            border:none;
+            outline:none;
+            /* border-bottom: 2px solid rgb(60, 255, 0); */
+            border: 2px solid rgb(60, 255, 0);
+
+       }
+      form input{
+        padding:10px 20px;
+        border: hidden;
+        background-color: aqua;
+        /* border-bottom: 2px solid red; */
+         border: 2px solid red;
+       }
+       /* form button{
+
+       } */
+    </style>
+</head>
+<body>
+    <center>
+        <mark>
+            <i>
+                <a href="index.html">Home Page</a>
+                <a href="about.html">About Page</a>
+                <a href="contact.html">Contact Page</a>
+                <a href="col_table.html">Column Table Page</a>
+                <a href="row_table.html">Row Table Page</a>
+                <a href="list.html">List Page</a>
+                <a href="extra_tags.html">Tags Page</a>
+                <a href="form.html">Forms Page</a>
+            </i>
+        </mark>
+    </center>
+    <form action="" autocomplete="off">
+        <fieldset>
+            <legend><b>Personal Information:</b></legend>
+        <div>
+        <label for="name">name :</label>
+        <input type="text" id="name" name="name" placeholder="name" value="" required/>
+        </div>
+        <br />
+        <div>
+            <label>email :</label>
+            <input type="email" required/>
+        </div>
+        <br />
+        <div>
+        <label>address :</label>
+        <textarea></textarea>
+        </div>
+        <br />
+        <div>
+            <label>gender :</label>
+            <input type="radio" value="male" name="in"><span>&nbsp;Male&nbsp;</span>
+            <input type="radio" value="female" name="in"><span>&nbsp;Female&nbsp;</span>
+
+        </div>
+        <br />
+        <div>
+            <label>Qualification :</label>
+            <select>
+                <option>Under Graduate</option>
+                <option>Post Graduate</option>
+
+            </select>
+        </div>
+        <br />
+        <div>
+            <input type="checkbox"/><label>click here </label>
+        </div>
+        <br />
+        <div>
+            <label>Upload: </label>
+            <input type="file"/>
+        </div>
+        <br />
+        <div>
+            <label>dob: </label>
+            <input type="date"/>
+        </div>
+        <br />
+        <input type="submit"/>
+        <input type="reset"/>
+        </fieldset>
+    </form>
+</body>
+</html>

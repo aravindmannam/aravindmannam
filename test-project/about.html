@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        /*universal selector */
+        /* *{ padding:0;
+            margin: 10;
+            font-family:'Courier New', Courier, monospace;
+        }  */
+        *{
+            margin: 0;
+            padding: 10px;
+            box-sizing: border-box;
+            font-family:'Courier New', Courier, monospace;
+        }
+        body{
+            background-color:skyblue;
+            background-image: url(bg2.jpg);
+             background-repeat: no-repeat;  
+            /*horizontal repeat*/
+            /* background-repeat: repeat-x;  */
+             /*vertical repeat*/
+            /* background-repeat: repeat-y; */
+            /*background-size:width height*/
+            /* background-size: 100% 100% ; */
+            /*background-attachment and background-size are linked to each other*/
+             background-size: cover; 
+            background-attachment: fixed;
+            background-position:center;
+        }
+        .div1{
+            background: yellow;
+        }
+        .div2{
+            background: black;
+        }
+        #div3{
+            background:greenyellow
+        }
+        /*grouping selector*/
+        .style{
+            padding: 20px;
+            font-family:'Courier New', Courier, monospace;
+
+        }
+
+        #div4,#div5{
+            background:skyblue;
+            font-family:'Courier New', Courier, monospace;
+        }
+        /*space selector*/
+        #div6 p{
+            background:greenyellow;
+            font-family:'Courier New', Courier, monospace; 
+        }
+        /*child selector*/
+        #div7>p{
+            background:orange;
+            font-family:'Courier New', Courier, monospace; 
+        }
+        .div8{
+            background: yellow;
+            width:500px;
+        }
+        .div9{
+            background: black;
+            border: 5px solid rgb(9, 255, 0);
+            padding: 10px 20px;
+            width:500px;
+            box-sizing: border-box; /*used to reduce the space*/
+        }
+        .style h1{
+            text-align: center;
+            text-transform: uppercase; /*text chnaged to uppercase*/
+            text-transform: lowercase; /*text chnaged to lowercase*/
+            text-shadow:2px 3px 4px red;
+            /* text-decoration: underline; */
+            text-decoration-line: underline;
+            /* text-decoration-style: solid;
+            text-decoration-thickness: 10px; 
+            text-decoration-line: line-through; */
+            text-decoration:solid 5px underline green;
+            /* font-weight: normal; */
+                font-weight: bold;
+                font-weight: 400;
+                font-weight: 800;
+                font-style: oblique;
+                font-style: italic;
+                font-variant: small-caps;
+                font-size: 40px;
+        }
+        .style p{
+            text-align: justify;  /*text arranged properly on all sides*/
+            text-align-last: right; /*last line moved to right side*/
+            text-indent:40px; /*paragraph starts after 40px space */
+            text-transform: capitalize; /*every first letter of the word in paragraph will be captial letter*/
+            line-height: 30px;
+            /* letter-spacing: 2px;
+            word-spacing: 2px; */
+            /* font-weight: bold; */
+                font-weight: 400;
+                /* font-weight: 800; */
+                font-style: oblique;
+                font-style: italic;
+                /* font-variant: small-caps; */
+                font-size: 20px;
+                font-family:'Times New Roman', Times, serif
+        } 
+        a{
+            color:red;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <mark>
+            <i>
+                <a href="index.html">Home Page</a>
+                <a href="about.html">About Page</a>
+                <a href="contact.html">Contact Page</a>
+                <a href="col_table.html">Column Table Page</a>
+                <a href="row_table.html">Row Table Page</a>
+                <a href="list.html">List Page</a>
+                <a href="extra_tags.html">Tags Page</a>
+                <a href="form.html">Forms Page</a>
+            </i>
+        </mark>
+    </center>
+    <h1 style="color: white;background-color: red;">About Page</h1>
+    <p style="color:blue;padding-left: 38px;">
+        We are ‘Versatile', and Agile is how we operate.
+    </p>
+    <blockquote>
+    <div class="div1 style">
+        <h1 style="color: white;background-color: red;">Heading 1</h1>
+        <p style="color:red;">
+            We are a team of passionate software programmers based out of the <big>UK</big> with an <small>R & D</small> Centre in Hyderabad, India. 
+            The eCommerce industry has evolved itself from being 'an option' to being 'the option', for retailers in just 
+            two decades. Having seen the inception, growth, and transformation of the <del>eCommerce</del> <u>e-commerce</u> business, we are proud to
+             say that we have contributed to it for almost a decade now. The Versatile commerce Platform is an output of 
+             all our learnings from the digital eCommerce industry's evolution. It comes from the strong product development 
+             and product lifecycle management <abbr title="DNA">DNA</abbr> of our founders. Our growth and the continued business we get from our 
+             customers is a strong testament to it.
+        </p>
+        <p style="color:green;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sapiente dolorum dolores nesciunt soluta eveniet quas nulla pariatur incidunt fugiat laudantium, harum eos officia quidem, aperiam delectus nisi consequatur similique.
+        Fugit dolores fugiat molestiae debitis necessitatibus, error at officia dolorum voluptas minus odio ratione a excepturi est, molestias quaerat, maiores voluptate sit? Cupiditate quidem distinctio quaerat, dolores saepe repellat ad!
+        Blanditiis, sapiente consequatur distinctio repudiandae explicabo dolor rerum temporibus dicta atque nostrum necessitatibus, expedita modi et quod nisi maxime iusto quam neque a molestias repellendus voluptate molestiae? Impedit, quo! Magnam!
+        Obcaecati, itaque dolore. Cupiditate maxime eius laboriosam autem sed atque quam eum adipisci! Id, est aperiam amet atque sapiente soluta porro velit voluptas, harum nemo, fugiat quos adipisci temporibus laboriosam?
+        Fuga, voluptate dolor, suscipit, ullam consectetur natus adipisci atque velit iste dolore quaerat eaque similique quibusdam magnam provident. Voluptatum libero numquam iste non omnis, dignissimos maxime hic debitis odit laudantium?
+        </p>
+    </div>
+    <div class="div2 style">
+        <h1 style="color: white;background-color: rgb(0, 225, 255);">Heading 2</h1>
+        <p style="color:red;">
+            We are a team of passionate software programmers based out of the <big>UK</big> with an <small>R & D</small> Centre in Hyderabad, India. 
+            The eCommerce industry has evolved itself from being 'an option' to being 'the option', for retailers in just 
+            two decades. Having seen the inception, growth, and transformation of the <del>eCommerce</del> <u>e-commerce</u> business, we are proud to
+             say that we have contributed to it for almost a decade now. The Versatile commerce Platform is an output of 
+             all our learnings from the digital eCommerce industry's evolution. It comes from the strong product development 
+             and product lifecycle management <abbr title="DNA">DNA</abbr> of our founders. Our growth and the continued business we get from our 
+             customers is a strong testament to it.
+        </p>
+        <p style="color:green;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sapiente dolorum dolores nesciunt soluta eveniet quas nulla pariatur incidunt fugiat laudantium, harum eos officia quidem, aperiam delectus nisi consequatur similique.
+        Fugit dolores fugiat molestiae debitis necessitatibus, error at officia dolorum voluptas minus odio ratione a excepturi est, molestias quaerat, maiores voluptate sit? Cupiditate quidem distinctio quaerat, dolores saepe repellat ad!
+        Blanditiis, sapiente consequatur distinctio repudiandae explicabo dolor rerum temporibus dicta atque nostrum necessitatibus, expedita modi et quod nisi maxime iusto quam neque a molestias repellendus voluptate molestiae? Impedit, quo! Magnam!
+        Obcaecati, itaque dolore. Cupiditate maxime eius laboriosam autem sed atque quam eum adipisci! Id, est aperiam amet atque sapiente soluta porro velit voluptas, harum nemo, fugiat quos adipisci temporibus laboriosam?
+        Fuga, voluptate dolor, suscipit, ullam consectetur natus adipisci atque velit iste dolore quaerat eaque similique quibusdam magnam provident. Voluptatum libero numquam iste non omnis, dignissimos maxime hic debitis odit laudantium?
+        </p>
+    </div>
+    <div class="div3 style" id="div3">
+        <h1 style="color: white;background-color: blueviolet;">Heading 3</h1>
+        <p style="color:red;">
+            We are a team of passionate software programmers based out of the <big>UK</big> with an <small>R & D</small> Centre in Hyderabad, India. 
+            The eCommerce industry has evolved itself from being 'an option' to being 'the option', for retailers in just 
+            two decades. Having seen the inception, growth, and transformation of the <del>eCommerce</del> <u>e-commerce</u> business, we are proud to
+             say that we have contributed to it for almost a decade now. The Versatile commerce Platform is an output of 
+             all our learnings from the digital eCommerce industry's evolution. It comes from the strong product development 
+             and product lifecycle management <abbr title="DNA">DNA</abbr> of our founders. Our growth and the continued business we get from our 
+             customers is a strong testament to it.
+        </p>
+        <p style="color:green;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sapiente dolorum dolores nesciunt soluta eveniet quas nulla pariatur incidunt fugiat laudantium, harum eos officia quidem, aperiam delectus nisi consequatur similique.
+        Fugit dolores fugiat molestiae debitis necessitatibus, error at officia dolorum voluptas minus odio ratione a excepturi est, molestias quaerat, maiores voluptate sit? Cupiditate quidem distinctio quaerat, dolores saepe repellat ad!
+        Blanditiis, sapiente consequatur distinctio repudiandae explicabo dolor rerum temporibus dicta atque nostrum necessitatibus, expedita modi et quod nisi maxime iusto quam neque a molestias repellendus voluptate molestiae? Impedit, quo! Magnam!
+        Obcaecati, itaque dolore. Cupiditate maxime eius laboriosam autem sed atque quam eum adipisci! Id, est aperiam amet atque sapiente soluta porro velit voluptas, harum nemo, fugiat quos adipisci temporibus laboriosam?
+        Fuga, voluptate dolor, suscipit, ullam consectetur natus adipisci atque velit iste dolore quaerat eaque similique quibusdam magnam provident. Voluptatum libero numquam iste non omnis, dignissimos maxime hic debitis odit laudantium?
+        </p>    
+    </div>
+    <div class="div4" id="div4">
+        <p style="color:red;">
+            We are a team of passionate software programmers based out of the <big>UK</big> with an <small>R & D</small> Centre in Hyderabad, India. 
+            The eCommerce industry has evolved itself from being 'an option' to being 'the option', for retailers in just 
+            two decades. Having seen the inception, growth, and transformation of the <del>eCommerce</del> <u>e-commerce</u> business, we are proud to
+             say that we have contributed to it for almost a decade now. The Versatile commerce Platform is an output of 
+             all our learnings from the digital eCommerce industry's evolution. It comes from the strong product development 
+             and product lifecycle management <abbr title="DNA">DNA</abbr> of our founders. Our growth and the continued business we get from our 
+             customers is a strong testament to it.
+        </p>
+        <p style="color:green;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sapiente dolorum dolores nesciunt soluta eveniet quas nulla pariatur incidunt fugiat laudantium, harum eos officia quidem, aperiam delectus nisi consequatur similique.
+        Fugit dolores fugiat molestiae debitis necessitatibus, error at officia dolorum voluptas minus odio ratione a excepturi est, molestias quaerat, maiores voluptate sit? Cupiditate quidem distinctio quaerat, dolores saepe repellat ad!
+        Blanditiis, sapiente consequatur distinctio repudiandae explicabo dolor rerum temporibus dicta atque nostrum necessitatibus, expedita modi et quod nisi maxime iusto quam neque a molestias repellendus voluptate molestiae? Impedit, quo! Magnam!
+        Obcaecati, itaque dolore. Cupiditate maxime eius laboriosam autem sed atque quam eum adipisci! Id, est aperiam amet atque sapiente soluta porro velit voluptas, harum nemo, fugiat quos adipisci temporibus laboriosam?
+        Fuga, voluptate dolor, suscipit, ullam consectetur natus adipisci atque velit iste dolore quaerat eaque similique quibusdam magnam provident. Voluptatum libero numquam iste non omnis, dignissimos maxime hic debitis odit laudantium?
+        </p>
+    </div>
+    <div class="div5" id="div5">
+        <p style="color:red;">
+            We are a team of passionate software programmers based out of the <big>UK</big> with an <small>R & D</small> Centre in Hyderabad, India. 
+            The eCommerce industry has evolved itself from being 'an option' to being 'the option', for retailers in just 
+            two decades. Having seen the inception, growth, and transformation of the <del>eCommerce</del> <u>e-commerce</u> business, we are proud to
+             say that we have contributed to it for almost a decade now. The Versatile commerce Platform is an output of 
+             all our learnings from the digital eCommerce industry's evolution. It comes from the strong product development 
+             and product lifecycle management <abbr title="DNA">DNA</abbr> of our founders. Our growth and the continued business we get from our 
+             customers is a strong testament to it.
+        </p>
+        <p style="color:green;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sapiente dolorum dolores nesciunt soluta eveniet quas nulla pariatur incidunt fugiat laudantium, harum eos officia quidem, aperiam delectus nisi consequatur similique.
+        Fugit dolores fugiat molestiae debitis necessitatibus, error at officia dolorum voluptas minus odio ratione a excepturi est, molestias quaerat, maiores voluptate sit? Cupiditate quidem distinctio quaerat, dolores saepe repellat ad!
+        Blanditiis, sapiente consequatur distinctio repudiandae explicabo dolor rerum temporibus dicta atque nostrum necessitatibus, expedita modi et quod nisi maxime iusto quam neque a molestias repellendus voluptate molestiae? Impedit, quo! Magnam!
+        Obcaecati, itaque dolore. Cupiditate maxime eius laboriosam autem sed atque quam eum adipisci! Id, est aperiam amet atque sapiente soluta porro velit voluptas, harum nemo, fugiat quos adipisci temporibus laboriosam?
+        Fuga, voluptate dolor, suscipit, ullam consectetur natus adipisci atque velit iste dolore quaerat eaque similique quibusdam magnam provident. Voluptatum libero numquam iste non omnis, dignissimos maxime hic debitis odit laudantium?
+        </p>
+    </div>
+    <div class="div6" id="div6">
+        <p style="color:red;">
+            We are a team of passionate software programmers based out of the <big>UK</big> with an <small>R & D</small> Centre in Hyderabad, India. 
+            The eCommerce industry has evolved itself from being 'an option' to being 'the option', for retailers in just 
+            two decades. Having seen the inception, growth, and transformation of the <del>eCommerce</del> <u>e-commerce</u> business, we are proud to
+             say that we have contributed to it for almost a decade now. The Versatile commerce Platform is an output of 
+             all our learnings from the digital eCommerce industry's evolution. It comes from the strong product development 
+             and product lifecycle management <abbr title="DNA">DNA</abbr> of our founders. Our growth and the continued business we get from our 
+             customers is a strong testament to it.
+        </p>
+        <p style="color:green;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sapiente dolorum dolores nesciunt soluta eveniet quas nulla pariatur incidunt fugiat laudantium, harum eos officia quidem, aperiam delectus nisi consequatur similique.
+        Fugit dolores fugiat molestiae debitis necessitatibus, error at officia dolorum voluptas minus odio ratione a excepturi est, molestias quaerat, maiores voluptate sit? Cupiditate quidem distinctio quaerat, dolores saepe repellat ad!
+        Blanditiis, sapiente consequatur distinctio repudiandae explicabo dolor rerum temporibus dicta atque nostrum necessitatibus, expedita modi et quod nisi maxime iusto quam neque a molestias repellendus voluptate molestiae? Impedit, quo! Magnam!
+        Obcaecati, itaque dolore. Cupiditate maxime eius laboriosam autem sed atque quam eum adipisci! Id, est aperiam amet atque sapiente soluta porro velit voluptas, harum nemo, fugiat quos adipisci temporibus laboriosam?
+        Fuga, voluptate dolor, suscipit, ullam consectetur natus adipisci atque velit iste dolore quaerat eaque similique quibusdam magnam provident. Voluptatum libero numquam iste non omnis, dignissimos maxime hic debitis odit laudantium?
+        </p>
+        <div class="div7" id="div7">
+            <p style="color:red;">
+                We are a team of passionate software programmers based out of the <big>UK</big> with an <small>R & D</small> Centre in Hyderabad, India. 
+                The eCommerce industry has evolved itself from being 'an option' to being 'the option', for retailers in just 
+                two decades. Having seen the inception, growth, and transformation of the <del>eCommerce</del> <u>e-commerce</u> business, we are proud to
+                 say that we have contributed to it for almost a decade now. The Versatile commerce Platform is an output of 
+                 all our learnings from the digital eCommerce industry's evolution. It comes from the strong product development 
+                 and product lifecycle management <abbr title="DNA">DNA</abbr> of our founders. Our growth and the continued business we get from our 
+                 customers is a strong testament to it.
+            </p>
+            <p style="color:green;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sapiente dolorum dolores nesciunt soluta eveniet quas nulla pariatur incidunt fugiat laudantium, harum eos officia quidem, aperiam delectus nisi consequatur similique.
+            Fugit dolores fugiat molestiae debitis necessitatibus, error at officia dolorum voluptas minus odio ratione a excepturi est, molestias quaerat, maiores voluptate sit? Cupiditate quidem distinctio quaerat, dolores saepe repellat ad!
+            Blanditiis, sapiente consequatur distinctio repudiandae explicabo dolor rerum temporibus dicta atque nostrum necessitatibus, expedita modi et quod nisi maxime iusto quam neque a molestias repellendus voluptate molestiae? Impedit, quo! Magnam!
+            Obcaecati, itaque dolore. Cupiditate maxime eius laboriosam autem sed atque quam eum adipisci! Id, est aperiam amet atque sapiente soluta porro velit voluptas, harum nemo, fugiat quos adipisci temporibus laboriosam?
+            Fuga, voluptate dolor, suscipit, ullam consectetur natus adipisci atque velit iste dolore quaerat eaque similique quibusdam magnam provident. Voluptatum libero numquam iste non omnis, dignissimos maxime hic debitis odit laudantium?
+            </p>
+        </div>
+    </div>
+    
+   <div class="div8">
+    <p style="color:red;">
+        We are a team of passionate software programmers based out of the <big>UK</big> with an <small>R & D</small> Centre in Hyderabad, India. 
+        The eCommerce industry has evolved itself from being 'an option' to being 'the option', for retailers in just 
+        two decades. Having seen the inception, growth, and transformation of the <del>eCommerce</del> <u>e-commerce</u> business, we are proud to
+         say that we have contributed to it for almost a decade now. The Versatile commerce Platform is an output of 
+         all our learnings from the digital eCommerce industry's evolution. It comes from the strong product development 
+         and product lifecycle management <abbr title="DNA">DNA</abbr> of our founders. Our growth and the continued business we get from our 
+         customers is a strong testament to it.
+    </p>
+   </div>
+   <div  class="div9">
+    <p style="color:green;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sapiente dolorum dolores nesciunt soluta eveniet quas nulla pariatur incidunt fugiat laudantium, harum eos officia quidem, aperiam delectus nisi consequatur similique.
+        Fugit dolores fugiat molestiae debitis necessitatibus, error at officia dolorum voluptas minus odio ratione a excepturi est, molestias quaerat, maiores voluptate sit? Cupiditate quidem distinctio quaerat, dolores saepe repellat ad!
+        Blanditiis, sapiente consequatur distinctio repudiandae explicabo dolor rerum temporibus dicta atque nostrum necessitatibus, expedita modi et quod nisi maxime iusto quam neque a molestias repellendus voluptate molestiae? Impedit, quo! Magnam!
+        Obcaecati, itaque dolore. Cupiditate maxime eius laboriosam autem sed atque quam eum adipisci! Id, est aperiam amet atque sapiente soluta porro velit voluptas, harum nemo, fugiat quos adipisci temporibus laboriosam?
+        Fuga, voluptate dolor, suscipit, ullam consectetur natus adipisci atque velit iste dolore quaerat eaque similique quibusdam magnam provident. Voluptatum libero numquam iste non omnis, dignissimos maxime hic debitis odit laudantium?
+        </p>
+   </div>
+  
+    <p style="color:red;">
+        We are a team of passionate software programmers based out of the <big>UK</big> with an <small>R & D</small> Centre in Hyderabad, India. 
+        The eCommerce industry has evolved itself from being 'an option' to being 'the option', for retailers in just 
+        two decades. Having seen the inception, growth, and transformation of the <del>eCommerce</del> <u>e-commerce</u> business, we are proud to
+         say that we have contributed to it for almost a decade now. The Versatile commerce Platform is an output of 
+         all our learnings from the digital eCommerce industry's evolution. It comes from the strong product development 
+         and product lifecycle management <abbr title="DNA">DNA</abbr> of our founders. Our growth and the continued business we get from our 
+         customers is a strong testament to it.
+    </p>
+    <p style="color:green;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sapiente dolorum dolores nesciunt soluta eveniet quas nulla pariatur incidunt fugiat laudantium, harum eos officia quidem, aperiam delectus nisi consequatur similique.
+    Fugit dolores fugiat molestiae debitis necessitatibus, error at officia dolorum voluptas minus odio ratione a excepturi est, molestias quaerat, maiores voluptate sit? Cupiditate quidem distinctio quaerat, dolores saepe repellat ad!
+    Blanditiis, sapiente consequatur distinctio repudiandae explicabo dolor rerum temporibus dicta atque nostrum necessitatibus, expedita modi et quod nisi maxime iusto quam neque a molestias repellendus voluptate molestiae? Impedit, quo! Magnam!
+    Obcaecati, itaque dolore. Cupiditate maxime eius laboriosam autem sed atque quam eum adipisci! Id, est aperiam amet atque sapiente soluta porro velit voluptas, harum nemo, fugiat quos adipisci temporibus laboriosam?
+    Fuga, voluptate dolor, suscipit, ullam consectetur natus adipisci atque velit iste dolore quaerat eaque similique quibusdam magnam provident. Voluptatum libero numquam iste non omnis, dignissimos maxime hic debitis odit laudantium?
+    </p>
+    <p style="color:red;">
+        We are a team of passionate software programmers based out of the <big>UK</big> with an <small>R & D</small> Centre in Hyderabad, India. 
+        The eCommerce industry has evolved itself from being 'an option' to being 'the option', for retailers in just 
+        two decades. Having seen the inception, growth, and transformation of the <del>eCommerce</del> <u>e-commerce</u> business, we are proud to
+         say that we have contributed to it for almost a decade now. The Versatile commerce Platform is an output of 
+         all our learnings from the digital eCommerce industry's evolution. It comes from the strong product development 
+         and product lifecycle management <abbr title="DNA">DNA</abbr> of our founders. Our growth and the continued business we get from our 
+         customers is a strong testament to it.
+    </p>
+    <p style="color:green;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sapiente dolorum dolores nesciunt soluta eveniet quas nulla pariatur incidunt fugiat laudantium, harum eos officia quidem, aperiam delectus nisi consequatur similique.
+    Fugit dolores fugiat molestiae debitis necessitatibus, error at officia dolorum voluptas minus odio ratione a excepturi est, molestias quaerat, maiores voluptate sit? Cupiditate quidem distinctio quaerat, dolores saepe repellat ad!
+    Blanditiis, sapiente consequatur distinctio repudiandae explicabo dolor rerum temporibus dicta atque nostrum necessitatibus, expedita modi et quod nisi maxime iusto quam neque a molestias repellendus voluptate molestiae? Impedit, quo! Magnam!
+    Obcaecati, itaque dolore. Cupiditate maxime eius laboriosam autem sed atque quam eum adipisci! Id, est aperiam amet atque sapiente soluta porro velit voluptas, harum nemo, fugiat quos adipisci temporibus laboriosam?
+    Fuga, voluptate dolor, suscipit, ullam consectetur natus adipisci atque velit iste dolore quaerat eaque similique quibusdam magnam provident. Voluptatum libero numquam iste non omnis, dignissimos maxime hic debitis odit laudantium?
+    </p>
+    
+    <p style="color:black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, culpa, fugit cum ducimus magni earum, deleniti esse saepe laborum quia atque neque tempore hic. Nihil eos debitis qui quam consectetur.
+    Suscipit expedita architecto laudantium itaque ex repellendus quia nemo rerum pariatur minus. Neque et labore debitis atque nobis ducimus? Quae distinctio incidunt error. Doloremque accusamus numquam possimus iusto, rerum ipsam.</p>
+    </blockquote>
+    <center>
+        <img src="images/1.jpeg" width="35%" height="300"/>
+    </center>
+    <h1 style="color: white;background-color: red;"> <sup>5</sup>LOG<sub>10</sub></h1>
+    <address>
+        Krishe'Sapphire, 1st floor, Hitechcity, Hyderabad, Telangana 500133
+Landmark- Beside Durgam cheruvu metro station
+    </address>
+</body>
+</html>

@@ -1,0 +1,67 @@
+meta tags-  invisible tags --- ex: 
+title,---page title
+meta,---marketing tags
+style,---internal css
+link,---external css
+script,--internal and external javascript
+base,---the document starting path
+title comes in head part
+
+<!doctype html>--- case insensitive <!DOCTYPE html>
+
+we can use only one <h1> tag inthe total web page
+
+tags -single,double
+attributes--- syntax : name="value"
+for full size image -width:100%,height should in px
+
+anchor tags used for navigation page <a></a>
+target="_blank" - used for opening url in another tab
+
+<center> tag to arrange element center 
+<hr> horizontal row line
+
+filepath
+formatting tags--bold->  b tag,italic-> i,em,strong tag
+<q> quotation tags
+<blockquote> used for space on both sides of the paragraph
+<del> used for strikeof the content
+<big>
+<small>
+<u> <ins> for underline 
+<abbr>---used for mousehover  tool tip
+<sub> ---used for suffix
+<sup>---used for suffix
+<address>
+<cite>----for special book names and author names
+<bdo dir="rtl">---bi directional
+<mark> used for marking ---default color yellow
+iframes
+ for 1 step to go back ../ 
+ 
+ tables
+ list
+ forms
+ buttons
+ marquee
+ audio and video tags
+ sematic elements
+ entities
+ fav icons
+ 
+ 
+ 
+ tables
+ <table>
+ <thead>
+ <tr>
+ <th>
+ </thead>
+ <tbody>
+ <tr>
+ <td>
+ </tbody>
+ colspan used for column seperation
+
+
+

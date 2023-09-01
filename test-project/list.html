@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        ul li{
+            /* list-style-type: disc;
+            list-style-type: circle; */
+            /* list-style-type: none; */
+
+            /* list-style-image: url("data:image/jpeg;base64,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"); */
+            /* border: 2px solid red;
+            list-style-position:inside; */
+            padding:10px 10px;
+            list-style: circle ;
+        }
+        ul li:first-child{
+            color :aquamarine
+        }
+        ul li:last-child{
+            color :rgb(189, 177, 13)
+        }
+        ul li:nth-child(2){
+            color :rgb(139, 13, 189)
+        }
+        ul li:nth-child(3){
+            color :rgb(15, 204, 72)
+        }
+        /* ol li{
+            list-style-type: upper-alpha;
+            list-style-type: lower-alpha;
+            list-style-type: upper-roman;
+            list-style-type: lower-roman;
+
+
+
+        } */
+    </style>
+</head>
+<body>
+    <center>
+        <mark>
+            <i>
+                <a href="index.html">Home Page</a>
+                <a href="about.html">About Page</a>
+                <a href="contact.html">Contact Page</a>
+                <a href="col_table.html">Column Table Page</a>
+                <a href="row_table.html">Row Table Page</a>
+                <a href="list.html">List Page</a>
+                <a href="extra_tags.html">Tags Page</a>
+                <a href="form.html">Forms Page</a>
+            </i>
+        </mark>
+    </center>
+    <center>
+        <h1><strong>List</strong></h1>
+    </center>
+        <h1>Un Ordered List</h1>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>List</li>
+        </ul>
+        <ul type="circle">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>List</li>
+        </ul>
+        <ul type="square">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>List</li>
+        </ul>
+        <ul type="none">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>List</li>
+        </ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>List
+                <ul>
+                    <li>Ordered List</li>
+                    <li>Un Ordered List</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h1>Ordered List</h1>
+        <ol>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>List</li>
+        </ol>
+        <ol type="A">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>List</li>
+        </ol>
+        <ol type="a">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>List</li>
+        </ol>
+        <ol type="I">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>List</li>
+        </ol>
+        <ol type="i">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>List</li>
+        </ol>
+        <ol start="100">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>List</li>
+        </ol>
+        <ol start="100" type="i">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>List</li>
+        </ol>
+        <ol start="100" type="A">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>List</li>
+        </ol>
+        <ol start="100" type="A" reversed>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>List</li>
+        </ol>
+        <ol reversed>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>List</li>
+        </ol>
+        <h1>Data List</h1>
+        <dl>
+            <dt>WC</dt>
+            <dd>World Cup</dd>
+        </dl>
+</body>
+</html>

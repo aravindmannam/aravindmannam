@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{margin:0;padding:0;box-sizing: border-box;}
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(201, 208, 211);
+        }
+
+        /* form{
+            display:flex;
+            flex-direction:column;
+        } */
+        form>input{
+            display:block;
+            width: 100%;
+            padding:10px 0px;
+            border:none;
+            outline: none;
+            border-bottom:2px solid red;
+            background-color:transparent;
+            margin-bottom: 5px;
+        }
+        /* form>input:hover{
+            display:block;
+            width: 100%;
+            padding:10px;
+            border:none;
+            outline: none;
+            border-bottom:2px solid rgb(51, 255, 0);
+            margin-bottom: 5px;
+
+        } */
+        .login{
+            background-color:rgb(81, 167, 201);
+            width:500px;
+            padding:30px;
+        }
+        .login:hover{
+            box-shadow: 0 0 5px black;
+        }
+        span{
+            display:inline-block;
+            padding: 10px 0px;
+            margin-bottom: 5px;
+
+        }
+        .submit input{
+            padding:10px 15px;
+            color: #fff;
+            border-radius: 5px;
+            /* background-color: rgb(173, 185, 147); */
+        }
+        h1{
+            margin-bottom:15px;
+            text-align: center;
+        }
+        .submit input[type="submit"]{
+            background-color: rgb(37, 192, 37);
+        }
+        .submit input[type="reset"]{
+            background-color: rgb(219, 118, 118);
+        }
+
+        .submit input[type="submit"]:hover{
+            background-color: green;
+        }
+        .submit input[type="reset"]:hover{
+            background-color: rgb(255, 0, 0);
+        }
+    
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="login">
+        <h1>Login Form</h1>
+        <form>
+            <span>Email :</span>
+            <input type="text" name="email" placeholder="Enter your email address">
+            <span>Password :</span>
+            <input type="password" name="password" placeholder="Enter your password">
+            <div class="submit">
+                <input type="submit" value="Login">
+                <input type="reset" value="reset">
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
